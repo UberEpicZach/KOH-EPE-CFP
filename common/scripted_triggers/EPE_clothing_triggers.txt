@@ -308,9 +308,9 @@ portrait_hungarian_clothing_spouse_trigger = {
 		portrait_hungarian_clothing_contents_trigger = yes
 	}
 }
- 
+
 ##Anglo-saxon
-portrait_anglo_saxon_clothing_trigger = {{{}}}
+portrait_anglo_saxon_clothing_trigger = {
 	scope:culture = { portrait_anglo_saxon_clothing_contents_trigger = yes }
 }
 
