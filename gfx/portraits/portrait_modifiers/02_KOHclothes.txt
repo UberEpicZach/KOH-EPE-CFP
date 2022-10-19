@@ -1786,6 +1786,45 @@ KOHclothes = {
 		}
 	}
 
+	assassin = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = no_clothes
+				range = { 0 1 } # For the randomness to work correctly
+			}
+			accessory = {
+				mode = add
+				gene = clothes_2
+				template = no_clothes
+				range = { 0 1 } # For the randomness to work correctly
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = yusuf_ibn_tashfin_clothes
+				range = { 0 1 }	# For the randomness to work correctly
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 30
+				portrait_sinan_trigger = yes
+				is_female = no
+			}
+			modifier = {
+				add = 130
+				this = character:227012
+			}
+			modifier = {
+				add = 120
+				is_assassin_trigger = yes
+			}
+		}
+	}
+
 	# bluecrown_knight_clothes = {
 	# 	dna_modifiers = {
 	# 		accessory = {
