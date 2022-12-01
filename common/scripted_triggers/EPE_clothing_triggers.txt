@@ -766,6 +766,32 @@ portrait_norman_clothing_contents_trigger = {
 		any_parent_culture_or_above = { this = culture:norman }	
 	}
 }
+
+##########################################################################
+####Briton(welsh)
+##########################################################################	
+portrait_welsh_clothing_trigger = {
+	scope:culture = { 
+		portrait_welsh_clothing_contents_trigger = yes 
+	}
+}
+portrait_welsh_clothing_spouse_trigger = {
+	culture = { portrait_welsh_clothing_contents_trigger = yes }
+}
+portrait_welsh_clothing_contents_trigger = {
+	OR = {
+		this = culture:welsh
+		any_parent_culture_or_above = { this = culture:welsh }
+		
+		this = culture:cornish
+		any_parent_culture_or_above = { this = culture:cornish }	
+
+		this = culture:cumbrian
+		any_parent_culture_or_above = { this = culture:cumbrian }			
+	}
+}
+
+
  
 
 ####Norman Sicily knights

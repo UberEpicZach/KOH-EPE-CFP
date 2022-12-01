@@ -88,15 +88,7 @@ KOHclothes = {
 				value = 0.0
 				#range = { 1 1 } # For the randomness to work correctly
 			}
-			accessory = {
-				mode = add
-				gene = special_headgear_head_bandage
-				template = head_bandage
-				#value = 1.0
-				range = { 1 1 } # For the randomness to work correctly
-			}
 		}
-		
 		weight = {
 			base = 0
 			modifier = {
@@ -195,9 +187,10 @@ KOHclothes = {
 					OR = {
 						top_liege = { has_primary_title = title:k_jerusalem }
 						has_primary_title = title:k_jerusalem
-						is_knight_of = title:k_jerusalem.holder
+						AND = { exists = title:k_jerusalem.holder is_knight_of = title:k_jerusalem.holder }
 						OR = {
 							AND = {
+								exists = title:k_jerusalem.holder
 								is_councillor_of = title:k_jerusalem.holder
 								has_council_position = councillor_marshal
 							}
@@ -258,7 +251,7 @@ KOHclothes = {
 					OR = {
 						top_liege = { has_primary_title = title:k_jerusalem }
 						has_primary_title = title:k_jerusalem
-						is_knight_of = title:k_jerusalem.holder
+						AND = { exists = title:k_jerusalem is_knight_of = title:k_jerusalem.holder }
 						OR = {
 							AND = {
 								is_councillor_of = title:k_jerusalem.holder
@@ -591,9 +584,10 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:c_ibelin }
 						has_primary_title = title:c_ibelin
-						is_knight_of = title:c_ibelin.holder
+						AND = { exists = title:c_ibelin.holder is_knight_of = title:c_ibelin.holder }
 						OR = {
 							AND = {
+								exists = title:c_ibelin.holder
 								is_councillor_of = title:c_ibelin.holder
 								has_council_position = councillor_marshal
 							}
@@ -652,7 +646,7 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:c_ibelin }
 						has_primary_title = title:c_ibelin
-						is_knight_of = title:c_ibelin.holder
+						AND = { exists = title:c_ibelin is_knight_of = title:c_ibelin.holder }
 						OR = {
 							AND = {
 								is_councillor_of = title:c_ibelin.holder
@@ -894,10 +888,11 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:k_england }
 						has_primary_title = title:k_england
-						is_knight_of = title:k_england.holder
+						AND = { exists = title:k_england.holder is_knight_of = title:k_england.holder }
 						has_culture = culture:english 
 						OR = {
 							AND = {
+								exists = title:k_england.holder
 								is_councillor_of = title:k_england.holder
 								has_council_position = councillor_marshal
 							}
@@ -954,7 +949,7 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:k_england }
 						has_primary_title = title:k_england
-						is_knight_of = title:k_england.holder
+						AND = { exists = title:k_england is_knight_of = title:k_england.holder }
 						has_culture = culture:english 
 						OR = {
 							AND = {
@@ -1080,10 +1075,11 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:k_france }
 						has_primary_title = title:k_france
-						is_knight_of = title:k_france.holder
+						AND = { exists = title:k_france.holder is_knight_of = title:k_france.holder }
 						has_culture = culture:french 
 						OR = {
 							AND = {
+								exists = title:k_france.holder
 								is_councillor_of = title:k_france.holder
 								has_council_position = councillor_marshal
 							}
@@ -1141,7 +1137,7 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:k_france }
 						has_primary_title = title:k_france
-						is_knight_of = title:k_france.holder
+						AND = { exists = title:k_france is_knight_of = title:k_france.holder }
 						has_culture = culture:french 
 						OR = {
 							AND = {
@@ -1365,10 +1361,11 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:e_hre }
 						has_primary_title = title:e_hre
-						is_knight_of = title:e_hre.holder
+						AND = { exists = title:e_hre.holder is_knight_of = title:e_hre.holder }
 						culture = { has_cultural_pillar = heritage_central_germanic }
 						OR = {
 							AND = {
+								exists = title:e_hre.holder
 								is_councillor_of = title:e_hre.holder
 								has_council_position = councillor_marshal
 							}
@@ -1426,7 +1423,7 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:e_hre }
 						has_primary_title = title:e_hre
-						is_knight_of = title:e_hre.holder
+						AND = { exists = title:e_hre.holder is_knight_of = title:e_hre.holder }
 						culture = { has_cultural_pillar = heritage_central_germanic }
 						OR = {
 							AND = {
@@ -1483,10 +1480,11 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:k_hungary }
 						has_primary_title = title:k_hungary
-						is_knight_of = title:k_hungary.holder
+						AND = { exists = title:k_hungary.holder is_knight_of = title:k_hungary.holder }
 						has_culture = culture:hungarian
 						OR = {
 							AND = {
+								exists = title:k_hungary.holder
 								is_councillor_of = title:k_hungary.holder
 								has_council_position = councillor_marshal
 							}
@@ -1542,7 +1540,7 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:k_hungary }
 						has_primary_title = title:k_hungary
-						is_knight_of = title:k_hungary.holder
+						AND = { exists = title:k_hungary is_knight_of = title:k_hungary.holder }
 						has_culture = culture:hungarian
 						OR = {
 							AND = {
@@ -1598,10 +1596,11 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:d_antioch }
 						has_primary_title = title:d_antioch
-						is_knight_of = title:d_antioch.holder
+						AND = { exists = title:d_antioch.holder is_knight_of = title:d_antioch.holder }
 						#has_culture_group = culture_group:central_germanic_group
 						OR = {
 							AND = {
+								exists = title:d_antioch.holder
 								is_councillor_of = title:d_antioch.holder
 								has_council_position = councillor_marshal
 							}
@@ -1658,7 +1657,7 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:d_antioch }
 						has_primary_title = title:d_antioch
-						is_knight_of = title:d_antioch.holder
+						AND = { exists = title:d_antioch.holder is_knight_of = title:d_antioch.holder }
 						#has_culture_group = culture_group:central_germanic_group
 						OR = {
 							AND = {
@@ -1713,10 +1712,11 @@ KOHclothes = {
 					OR = {
 						liege = { has_primary_title = title:d_bavaria }
 						has_primary_title = title:d_bavaria
-						is_knight_of = title:d_bavaria.holder
+						AND = { exists = title:d_bavaria.holder is_knight_of = title:d_bavaria.holder }
 						has_culture = culture:bavarian
 						OR = {
 							AND = {
+								exists = title:d_bavaria.holder
 								is_councillor_of = title:d_bavaria.holder
 								has_council_position = councillor_marshal
 							}
@@ -1776,6 +1776,7 @@ KOHclothes = {
 						has_culture = culture:bavarian
 						OR = {
 							AND = {
+								exists = title:d_bavaria.holder
 								is_councillor_of = title:d_bavaria.holder
 								has_council_position = councillor_marshal
 							}

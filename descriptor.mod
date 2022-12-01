@@ -3,5 +3,5 @@ tags={
 	"Graphics"
 }
 name="KOH-EPE-CFP Github Patch"
-supported_version="1.4.4"
+supported_version="1.7.2"
 remote_file_id="2549929286"
