@@ -44,10 +44,9 @@ KOHcloaks = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
-				gene = cloaksKOH
-				template = saladin_cloak 
-				#value = 100
-				range = { 1 1 } # For the randomness to work correctly
+				gene = cloaks
+				template = fp1_cloak_ruler
+				value = 0.70
 			}
 		}
 		weight = {
@@ -56,14 +55,14 @@ KOHcloaks = {
 				add = 1000
 				portrait_wear_armor_trigger = yes
 				portrait_richard_trigger = yes
-				# is_female = no
-				# this = character:204510
-				# location = {
-				# 	NOT = {
-				# 		geographical_region = world_middle_east
-				# 		geographical_region = world_africa
-				# 	}
-				# }
+				is_female = no
+				this = character:204510
+				location = {
+					NOT = {
+						geographical_region = world_middle_east
+						geographical_region = world_africa
+					}
+				}
 			}
 		}
 	}

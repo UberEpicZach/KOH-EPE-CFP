@@ -182,8 +182,9 @@ KOHclothes = {
 				add = 150
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						top_liege = { has_primary_title = title:k_jerusalem }
 						has_primary_title = title:k_jerusalem
@@ -243,15 +244,16 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 150
+				add = 400
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						top_liege = { has_primary_title = title:k_jerusalem }
 						has_primary_title = title:k_jerusalem
-						AND = { exists = title:k_jerusalem is_knight_of = title:k_jerusalem.holder }
+						AND = { exists = title:k_jerusalem.holder is_knight_of = title:k_jerusalem.holder }
 						OR = {
 							AND = {
 								is_councillor_of = title:k_jerusalem.holder
@@ -354,7 +356,7 @@ KOHclothes = {
 				exists = global_var:EPE_is_loaded
 			}
 			modifier = {
-				add = 130
+				add = 1230
 				this = character:226000
 				exists = global_var:EPE_is_loaded
 			}
@@ -392,7 +394,7 @@ KOHclothes = {
 			base = 0
 			modifier = {
 				add = 30
-				portrait_wear_armor_trigger = yes
+				
 				portrait_richard_trigger = yes
 				is_female = no
 				NOT = { 
@@ -401,7 +403,7 @@ KOHclothes = {
 			}
 			modifier = {
 				add = 130
-				portrait_wear_armor_trigger = yes
+				
 				this = character:204510
 				NOT = { 
 					exists = global_var:EPE_is_loaded
@@ -447,14 +449,14 @@ KOHclothes = {
 			base = 0
 			modifier = {
 				add = 30
-				portrait_wear_armor_trigger = yes
+				
 				portrait_richard_trigger = yes
 				is_female = no
 				exists = global_var:EPE_is_loaded
 			}
 			modifier = {
 				add = 130
-				portrait_wear_armor_trigger = yes
+				
 				this = character:204510
 				exists = global_var:EPE_is_loaded
 			}
@@ -492,7 +494,7 @@ KOHclothes = {
 			base = 0
 			modifier = {
 				add = 100
-				portrait_wear_armor_trigger = yes
+				
 				portrait_ayyubid_clothing_trigger = yes
 				NOT = { 
 					exists = global_var:EPE_is_loaded
@@ -538,7 +540,7 @@ KOHclothes = {
 			base = 0
 			modifier = {
 				add = 100
-				portrait_wear_armor_trigger = yes
+				
 				portrait_ayyubid_clothing_trigger = yes
 				exists = global_var:EPE_is_loaded
 			}
@@ -575,12 +577,13 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 151
+				add = 200
 				is_male = yes 
 				age >= 18
 				has_religion = religion:christianity_religion
-				portrait_wear_armor_trigger = yes
+				
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:c_ibelin }
 						has_primary_title = title:c_ibelin
@@ -637,16 +640,17 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 151
+				add = 200
 				is_male = yes 
 				age >= 18
 				has_religion = religion:christianity_religion
-				portrait_wear_armor_trigger = yes
+				
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:c_ibelin }
 						has_primary_title = title:c_ibelin
-						AND = { exists = title:c_ibelin is_knight_of = title:c_ibelin.holder }
+						AND = { exists = title:c_ibelin.holder is_knight_of = title:c_ibelin.holder }
 						OR = {
 							AND = {
 								is_councillor_of = title:c_ibelin.holder
@@ -702,7 +706,7 @@ KOHclothes = {
 				OR = {
 					AND = {
 						portrait_templar_trigger = yes 
-						portrait_wear_armor_trigger = yes
+						
 					}	
 					AND = {
 						religion = religion:christianity_religion
@@ -713,7 +717,7 @@ KOHclothes = {
 						religion = religion:christianity_religion
 						is_landed = no
 						portrait_templar_trigger = yes
-						portrait_wear_armor_trigger = yes
+						
 						exists = liege
 						liege = {
 							has_government = holy_order_government
@@ -721,7 +725,7 @@ KOHclothes = {
 					}
 					AND = {
 						religion = religion:christianity_religion
-						portrait_wear_armor_trigger = yes
+						
 						portrait_templar_trigger = yes
 						OR = {
 							any_character_war = {
@@ -799,7 +803,7 @@ KOHclothes = {
 				OR = {
 					AND = {
 						portrait_templar_trigger = yes 
-						portrait_wear_armor_trigger = yes
+						
 					}	
 					AND = {
 						religion = religion:christianity_religion
@@ -810,7 +814,7 @@ KOHclothes = {
 						religion = religion:christianity_religion
 						is_landed = no
 						portrait_templar_trigger = yes
-						portrait_wear_armor_trigger = yes
+						
 						exists = liege
 						liege = {
 							has_government = holy_order_government
@@ -818,7 +822,7 @@ KOHclothes = {
 					}
 					AND = {
 						religion = religion:christianity_religion
-						portrait_wear_armor_trigger = yes
+						
 						portrait_templar_trigger = yes
 						OR = {
 							any_character_war = {
@@ -876,15 +880,16 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 102
+				add = 200
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				has_religion = religion:christianity_religion
 				NOT = { 
 					exists = global_var:EPE_is_loaded
 				}
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:k_england }
 						has_primary_title = title:k_england
@@ -939,17 +944,18 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 102
+				add = 200
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				has_religion = religion:christianity_religion
 				exists = global_var:EPE_is_loaded
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:k_england }
 						has_primary_title = title:k_england
-						AND = { exists = title:k_england is_knight_of = title:k_england.holder }
+						AND = { exists = title:k_england.holder is_knight_of = title:k_england.holder }
 						has_culture = culture:english 
 						OR = {
 							AND = {
@@ -991,7 +997,7 @@ KOHclothes = {
 	#			OR = {
 	#				AND = {
 	#					portrait_hospitaller_trigger = yes
-	#					portrait_wear_armor_trigger = yes
+	#					
 	#				}	
 	#				AND = {
 	#					religion = religion:christianity_religion
@@ -1002,7 +1008,7 @@ KOHclothes = {
 	#					religion = religion:christianity_religion
 	#					is_landed = no
 	#					portrait_hospitaller_trigger = yes
-	#					portrait_wear_armor_trigger = yes
+	#					
 	#					exists = liege
 	#					liege = {
 	#						has_government = holy_order_government
@@ -1010,7 +1016,7 @@ KOHclothes = {
 	#				}
 	#				AND = {
 	#					religion = religion:christianity_religion
-	#					portrait_wear_armor_trigger = yes
+	#					
 	#					portrait_hospitaller_trigger = yes
 	#					OR = {
 	#						any_character_war = {
@@ -1067,11 +1073,12 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 102
+				add = 200
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:k_france }
 						has_primary_title = title:k_france
@@ -1129,15 +1136,16 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 102
+				add = 200
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:k_france }
 						has_primary_title = title:k_france
-						AND = { exists = title:k_france is_knight_of = title:k_france.holder }
+						AND = { exists = title:k_france.holder is_knight_of = title:k_france.holder }
 						has_culture = culture:french 
 						OR = {
 							AND = {
@@ -1187,7 +1195,7 @@ KOHclothes = {
 				OR = {
 					AND = {
 						portrait_hospitaller_trigger = yes
-						portrait_wear_armor_trigger = yes
+						
 					}	
 					AND = {
 						religion = religion:christianity_religion
@@ -1198,7 +1206,7 @@ KOHclothes = {
 						religion = religion:christianity_religion
 						is_landed = no
 						portrait_hospitaller_trigger = yes
-						portrait_wear_armor_trigger = yes
+						
 						exists = liege
 						liege = {
 							has_government = holy_order_government
@@ -1206,7 +1214,7 @@ KOHclothes = {
 					}
 					AND = {
 						religion = religion:christianity_religion
-						portrait_wear_armor_trigger = yes
+						
 						portrait_hospitaller_trigger = yes
 						OR = {
 							any_character_war = {
@@ -1276,7 +1284,7 @@ KOHclothes = {
 				OR = {
 					AND = {
 						portrait_hospitaller_trigger = yes
-						portrait_wear_armor_trigger = yes
+						
 					}	
 					AND = {
 						religion = religion:christianity_religion
@@ -1287,7 +1295,7 @@ KOHclothes = {
 						religion = religion:christianity_religion
 						is_landed = no
 						portrait_hospitaller_trigger = yes
-						portrait_wear_armor_trigger = yes
+						
 						exists = liege
 						liege = {
 							has_government = holy_order_government
@@ -1295,7 +1303,7 @@ KOHclothes = {
 					}
 					AND = {
 						religion = religion:christianity_religion
-						portrait_wear_armor_trigger = yes
+						
 						portrait_hospitaller_trigger = yes
 						OR = {
 							any_character_war = {
@@ -1353,11 +1361,12 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 110
+				add = 210
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:e_hre }
 						has_primary_title = title:e_hre
@@ -1415,11 +1424,12 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 110
+				add = 210
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:e_hre }
 						has_primary_title = title:e_hre
@@ -1469,14 +1479,15 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 110
+				add = 210
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				NOT = { 
 					exists = global_var:EPE_is_loaded
 				}
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:k_hungary }
 						has_primary_title = title:k_hungary
@@ -1531,16 +1542,17 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 110
+				add = 210
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				exists = global_var:EPE_is_loaded
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:k_hungary }
 						has_primary_title = title:k_hungary
-						AND = { exists = title:k_hungary is_knight_of = title:k_hungary.holder }
+						AND = { exists = title:k_hungary.holder is_knight_of = title:k_hungary.holder }
 						has_culture = culture:hungarian
 						OR = {
 							AND = {
@@ -1584,15 +1596,16 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 110
+				add = 210
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				has_religion = religion:christianity_religion
 				NOT = { 
 					exists = global_var:EPE_is_loaded
 				}
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:d_antioch }
 						has_primary_title = title:d_antioch
@@ -1647,13 +1660,14 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 110
+				add = 210
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				has_religion = religion:christianity_religion
 				exists = global_var:EPE_is_loaded
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:d_antioch }
 						has_primary_title = title:d_antioch
@@ -1701,14 +1715,15 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 110
+				add = 210
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				NOT = { 
 					exists = global_var:EPE_is_loaded
 				}
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:d_bavaria }
 						has_primary_title = title:d_bavaria
@@ -1763,12 +1778,13 @@ KOHclothes = {
 		weight = {
 			base = 0
 			modifier = {
-				add = 110
+				add = 210
 				is_male = yes
 				age >= 18
-				portrait_wear_armor_trigger = yes
+				
 				exists = global_var:EPE_is_loaded
 				AND = {
+					portrait_wear_armor_trigger = yes
 					OR = {
 						liege = { has_primary_title = title:d_bavaria }
 						has_primary_title = title:d_bavaria
@@ -1859,7 +1875,7 @@ KOHclothes = {
 	# 			add = 100
 	# 			is_male = yes
 	# 			age >= 18
-	# 			portrait_wear_armor_trigger = yes
+	# 			
 	# 			NOT = { 
 	# 				exists = global_var:EPE_is_loaded
 	# 			}
